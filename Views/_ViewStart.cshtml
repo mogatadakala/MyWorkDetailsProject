@@ -1,0 +1,20 @@
+﻿@*@{
+    var controller = this.ViewContext.RouteData.Values["Controller"].ToString();
+    switch (controller)
+    {
+        case "LoginRegistration":
+            Layout = "_LoginRegLayout";
+            break;
+        case "Admin":
+            Layout = "_AdminLayout";
+            break;
+        default:
+            Layout = "_Layout";
+            break;
+    }
+   
+}
+*@
+@{
+    Layout = "_Layout";
+}

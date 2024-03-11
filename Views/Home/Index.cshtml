@@ -1,0 +1,15 @@
+﻿
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+
+@{
+    ViewData["Title"] = "Home Page";
+    var message = TempData["UserID"] as string;
+    var userid = HttpContextAccessor?.HttpContext?.Session.GetString("UserID");
+    var cookieuserid = HttpContextAccessor?.HttpContext?.Request.Cookies["UserName"];
+}
+<div class="text-center">
+    
+    <h1 class="display-4">Welcome to TempData @message and Session @userid and Cookies @cookieuserid</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

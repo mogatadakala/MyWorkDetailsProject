@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <title>@ViewBag.title</title>
+}
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor HttpContextAccessor;
+@model MyWorkDetailsProject.Models.LoginViewModel;
+<html>
+    <head>
+    <h1>Login Form</h1>
+    <h2>@HttpContextAccessor?.HttpContext?.Session.GetString("Name")</h2>
+    </head>
+    <body>
+      <form role="form" asp-action="Login" asp-controller="LoginRegistration" method="post">
+          <table>
+            <tr>
+                <td>
+                    <label for="UserID">User ID</label>
+                </td>
+                <td>
+                    <input type="text" name="UserID" asp-for="UserID" autocomplete="off" placeholder="UserID">
+                    <span asp-validation-for="UserID" class="text-danger"></span>
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                    <label for="Password">Password</label><br />
+                    </td>
+                    <td>
+                    <input type="password" name="Password" asp-for="Password" autocomplete="off" placeholder="Password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                    </td>
+                </tr>
+          </table>
+        <input type="submit" value="Login" class="btn btn-info btn-block" />
+      </form>
+    </body>
+</html>
