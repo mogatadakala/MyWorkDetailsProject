@@ -64,7 +64,7 @@ namespace MyWorkDetailsProject.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Register(Register register)
+        public async Task<IActionResult> Register(Register register)
         {
             if(ModelState.IsValid)
             {
@@ -79,14 +79,14 @@ namespace MyWorkDetailsProject.Controllers
                 var password=register.Password;
                 var confirmpassword = register.ConfirmPassword;
 
-                _applicationDBCOntext.registers.Add(register);
-                _applicationDBCOntext.SaveChanges();
-                _applicationDBCOntext.logins.Add(new Models.Login
+               await  _applicationDBCOntext.registers.AddAsync(register);
+                await _applicationDBCOntext.SaveChangesAsync();
+               await _applicationDBCOntext.logins.AddAsync(new Models.Login
                 {
                     UserID= userid,
                     Password= password
                 });
-                _applicationDBCOntext.SaveChanges();
+               await  _applicationDBCOntext.SaveChangesAsync();
                // ViewBag.UserID = userid;
                 return RedirectToAction("Login");
             }
