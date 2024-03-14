@@ -11,6 +11,7 @@ namespace MyWorkDetailsProject
         {
             var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
             var builder = WebApplication.CreateBuilder(args);
+            
             builder.Services.AddLogging(loggingBuilder =>
             {
                 loggingBuilder.ClearProviders();
