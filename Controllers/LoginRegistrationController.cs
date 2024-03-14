@@ -89,6 +89,7 @@ namespace MyWorkDetailsProject.Controllers
                await  _applicationDBCOntext.SaveChangesAsync();
                // ViewBag.UserID = userid;
                 return RedirectToAction("Login");
+                
             }
             else
             {

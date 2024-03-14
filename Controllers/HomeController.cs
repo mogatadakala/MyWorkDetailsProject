@@ -1,20 +1,23 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyWorkDetailsProject.Models;
 using System.Diagnostics;
+using NLog;
 
 namespace MyWorkDetailsProject.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    _logger = logger;
+        //}
 
         public IActionResult Index()
         {
+            TempData["UserID"] = "Durga Prasad";
+            _logger.Info("Calling Index Method");
             return View();
         }
 

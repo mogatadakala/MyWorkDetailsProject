@@ -498,3 +498,12 @@ C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\obj\Debu
 C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\obj\Debug\net6.0\MyWorkDetailsProject.pdb
 C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\obj\Debug\net6.0\MyWorkDetailsProject.genruntimeconfig.cache
 C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\obj\Debug\net6.0\ref\MyWorkDetailsProject.dll
+C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\bin\Debug\net6.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\bin\Debug\net6.0\nlog.config
+C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\bin\Debug\net6.0\NLog.dll
+C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Personal\.Net Interview Questions\.NET Practice\MyWorkDetailsProject\bin\Debug\net6.0\NLog.Web.AspNetCore.dll
